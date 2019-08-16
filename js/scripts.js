@@ -9,22 +9,25 @@ $(document).ready(function(){
     var challenge = $("select#challenge").val();
     var animal = $("select#animal").val();
     var nameInput = $("input#name").val();
+    var none = $("input#none").val();
 
     $(".name").text(nameInput);
 
     if (career === "dev") {
-      $("#python").show();
-    }
-    else if (career === "web" || company === "hulu") {
-      $("#ruby").show();
-    }
-    else if (career === "software" || company === "microsoft") {
-      $("#c").show();
-    }
-    else if (career === "hand" || company === "pendant" || important === "sitcom" || challenge === "none" || animal === "sloth") {
-      $("#george").show();
-    }
-
+        $("#python").show();
+      }
+      else if (career === "web") {
+        $("#ruby").show();
+      }
+      else if (career === "software") {
+        $("#c").show();
+      }
+      else if (career === "hand" || company === "pendant") {
+        $("#george").show();
+      }
   });
 
+    $("#reset").click(function(){
+      $(".result").hide()
+    })
 });
