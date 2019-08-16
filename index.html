@@ -5,103 +5,108 @@
     <title>Programming Language Suggester</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.4.1.js"type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:800&display=swap" rel="stylesheet">
+    <script src="js/scripts.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <img src="img/code.png" id="cup" alt="Cup of Code">
-        <h1>So, you want to be a programmer?</h1>
-        <h4 id="sub">Take this short survey to find out which programming language you should focus on this summer.</h4>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="panel panel-success">
-            <div class="panel-body">
-              <form class="survey" action="index.html" method="post">
-                <!-- <div class="name">
-                  <label for="name">Please enter your name.</label>
-                  <input id="name" class="form-control" type="text">
-                </div> -->
-                <div class="panel-heading">
-                <h3>What career interests you?</h3>
-              </div>
-                <select id="career" class="select">
-                  <option value="none">Please Select</option>
-                  <option value="hand">Hand Model</option>
-                  <option value="dev">Back-end Developer</option>
-                  <option value="software">Software Engineer</option>
-                  <option value="web">Web Applications</option>
-                </select>
-                <div class="panel-heading">
-                  <h3>What type of company would you like to work for?</h3>
+      <div id="programming">
+        <div class="jumbotron">
+          <img src="img/code.png" id="cup" alt="Cup of Code">
+          <h1>So, you want to be a programmer?</h1>
+          <h4 id="sub">Take this short survey to find out which programming language you should focus on this summer.</h4>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-success">
+              <div class="panel-body">
+                <form class="survey" action="index.html" method="post">
+                  <!-- <div class="name">
+                    <label for="name">Please enter your name.</label>
+                    <input id="name" class="form-control" type="text">
+                  </div> -->
+                  <div class="panel-heading">
+                  <h3>What career interests you?</h3>
                 </div>
-                <select id="company" class="select">
-                  <option value="none">Please Select</option>
-                  <option value="google">Google</option>
-                  <option value="pendant">Pendant Publishing</option>
-                  <option value="microsoft">Microsoft</option>
-                  <option value="hulu">Hulu</option>
-                </select>
-                <div class="panel-heading">
-                  <h3>What sounds most important to you?</h3>
-                </div>
-                <select id="important" class="select">
-                  <option value="none">Please Select</option>
-                  <option value="ai">Artificial Intelligence</option>
-                  <option value="simulation">Simulations and 3D modeling</option>
-                  <option value="sitcom">Sitcom Writing</option>
-                  <option value="applications">Desktop Applications</option>
-                </select>
-                <div class="panel-heading">
-                  <h3>How much of a challenge are you looking for?</h3>
-                </div>
-                <select id="challenge" class="select">
-                  <option value="none">Please Select</option>
-                  <option value="no">No challenge</option>
-                  <option value="small">Small challenge</option>
-                  <option value="moderate">Moderate challenge</option>
-                  <option value="yes">I am so up for a challenge</option>
-                </select>
-                <div class="panel-heading">
-                  <h3>What animal do you best identify with?</h3>
-                </div>
-                <select id="animal" class="select">
-                  <option value="none">Please Select</option>
-                  <option value="sloth">Sloth</option>
-                  <option value="moose">Moose</option>
-                  <option value="owl">Owl</option>
-                  <option value="shark">Shark</option>
-                </select>
-                <div class="row">
-                  <button class="button" id="submit">Submit!</button>
-                </div>
-          </form>
+                  <select id="career" class="select">
+                    <option value="none">Please Select</option>
+                    <option value="hand">Hand Model</option>
+                    <option value="dev">Back-end Developer</option>
+                    <option value="software">Software Engineer</option>
+                    <option value="web">Web Applications</option>
+                  </select>
+                  <div class="panel-heading">
+                    <h3>What type of company would you like to work for?</h3>
+                  </div>
+                  <select id="company" class="select">
+                    <option value="none">Please Select</option>
+                    <option value="google">Google</option>
+                    <option value="pendant">Pendant Publishing</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="hulu">Hulu</option>
+                  </select>
+                  <div class="panel-heading">
+                    <h3>What sounds most interesting to you?</h3>
+                  </div>
+                  <select id="interest" class="select">
+                    <option value="none">Please Select</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="simulation">Simulations and 3D modeling</option>
+                    <option value="sitcom">Sitcom Writing</option>
+                    <option value="applications">Desktop Applications</option>
+                  </select>
+                  <div class="panel-heading">
+                    <h3>How much of a challenge are you looking for?</h3>
+                  </div>
+                  <select id="challenge" class="select">
+                    <option value="none">Please Select</option>
+                    <option value="no">No challenge</option>
+                    <option value="small">Small challenge</option>
+                    <option value="moderate">Moderate challenge</option>
+                    <option value="yes">I am so up for a challenge</option>
+                  </select>
+                  <div class="panel-heading">
+                    <h3>What animal do you best identify with?</h3>
+                  </div>
+                  <select id="animal" class="select">
+                    <option value="none">Please Select</option>
+                    <option value="sloth">Sloth</option>
+                    <option value="moose">Moose</option>
+                    <option value="whale">Whale</option>
+                    <option value="shark">Shark</option>
+                  </select>
+                  <div class="row">
+                    <button class="button" id="submit">Submit!</button>
+                  </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-
-    <div class="result" id="python">
-        <h3><span class="name"></span>, you should learn <strong>Python</strong>!</h3>
-        <img src="img/python.png" alt="Python Logo">
       </div>
 
-      <div class="result" id="ruby">
-        <h3><span class="name"></span>, you should learn <strong>Ruby</strong>!</h3>
-        <img src="img/ruby.png" alt="Ruby Logo">
-      </div>
+      <div class="result" id="python">
+          <h3><span class="name"></span>, you should learn <strong>Python</strong>!</h3>
+          <img src="img/python.png" alt="Python Logo">
+        </div>
 
-      <div class="result" id="c">
-        <h3><span class="name"></span>, you should learn <strong>C#</strong>!</h3>
-        <img src="img/c.png" alt="C Sharp Logo">
-      </div>
+        <div class="result" id="ruby">
+          <h3><span class="name"></span>, you should learn <strong>Ruby</strong>!</h3>
+          <img src="img/ruby.png" alt="Ruby Logo">
+        </div>
 
-      <div class="result" id="george">
-        <h3><span class="name"></span>, you should just declare this the summer of George!</h3>
-        <img src="img/george.jpg" alt="George Costanza">
+        <div class="result" id="c">
+          <h3><span class="name"></span>, you should learn <strong>C#</strong>!</h3>
+          <img src="img/c.png" alt="C Sharp Logo">
+        </div>
+
+        <div class="result" id="george">
+          <h3><span class="name"></span>, you should just declare this the summer of George!</h3>
+          <img src="img/george.jpg" alt="George Costanza">
+        </div>
+        <div id="shark">
+          <h1>Sharks are freaking awesome!</h1>
+        </div>
       </div>
     </div>
   </body>
