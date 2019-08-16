@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(".survey").submit(function(event){
     $(".result").hide();
+
     event.preventDefault();
     var career = $("select#career").val();
     var company = $("select#company").val();
