@@ -8,16 +8,16 @@ $(document).ready(function(){
     var challenge = $("select#challenge").val();
     var animal = $("select#animal").val();
 
-    if (career === "dev" || company === "google" || important === "ai" || challenge === "small" || animal === "moose") {
+    if (career === "dev" || company === "google") {
       $("#python").show();
     }
-    else if (career === "web" || company === "hulu" || important === "simulation" || challenge === "moderate" || animal === "owl") {
+    else if (career === "web" || company === "hulu") {
       $("#ruby").show();
     }
-    else if (career === "software" || company === "microsoft" || important === "applications" || challenge === "yes" || animal === "shark") {
-      $("#c#").show();
+    else if (career === "software" || company === "microsoft") {
+      $("#c").show();
     }
-    else (career === "hand" || company === "pendant" || important === "sitcom" || challenge === "none" || animal === "sloth") {
+    else if (career === "hand" || company === "pendant" || important === "sitcom" || challenge === "none" || animal === "sloth") {
       $("#george").show();
     }
 
