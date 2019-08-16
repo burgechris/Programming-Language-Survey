@@ -13,20 +13,20 @@ $(document).ready(function(){
 
     $(".name").text(name);
 
-    if (career === "dev") {
+    if (career === "none" || company === "none" || interest === "none" || challenge === "none" || animal === "none") {
+      alert("Oops, it looks like you forgot something!!")
+    }
+      else if (career === "dev") {
         $("#python").show();
       }
-      else if (career === "software") {
+      else if (career === "web") {
         $("#ruby").show();
       }
-      else if (career === "web") {
+      else if (career === "software") {
         $("#c").show();
       }
       else if (career === "hand") {
         $("#george").show();
-      }
-      else if (animal === "none" || company === "none" || important === "none" || challenge === "none" || animal === "none") {
-        alert("Oops, it looks like you forgot something!!")
       }
   });
 
