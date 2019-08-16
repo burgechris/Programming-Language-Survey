@@ -30,3 +30,7 @@ body {
 .panel-body {
   background-color: #8892a5;
 }
+
+#name {
+  text-align: center;
+}

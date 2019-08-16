@@ -7,8 +7,11 @@ $(document).ready(function(){
     var important = $("select#important").val();
     var challenge = $("select#challenge").val();
     var animal = $("select#animal").val();
+    var nameInput = $("input#name").val();
 
-    if (career === "dev" || company === "google") {
+    $(".name").text(nameInput);
+
+    if (career === "dev") {
       $("#python").show();
     }
     else if (career === "web" || company === "hulu") {
