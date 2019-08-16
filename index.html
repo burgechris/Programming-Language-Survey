@@ -13,48 +13,64 @@
     <div class="container">
       <div class="jumbotron">
         <h1>So you want to be a programmer?</h1>
-        <img src="img/coding.jpg" alt="Coding Logo">
+        <!-- <img src="img/coding.jpg" id="coding" alt="Coding Logo"> -->
       </div>
       <div class="row">
-        <form class="survey" action="index.html" method="post">
-          <h3>What career interests you?</h3>
-          <select id="career" name="">
-            <option value="hand">Hand Model</option>
-            <option value="dev">Back-end Developer</option>
-            <option value="software">Software Engineer</option>
-            <option value="import">Import/Export</option>
-          </select>
-          <h3>What type of company would you like to work for?</h3>
-          <select id="company" name="">
-            <option value="google">Google</option>
-            <option value="pendant">Pendant Publishing</option>
-            <option value="microsoft">Microsoft</option>
-            <option value="ig">Instagram</option>
-          </select>
-          <h3>What sounds most important to you?</h3>
-          <select id="important" name="">
-            <option value="ai">Artificial Intelligence</option>
-            <option value="simulation">Simulations and 3D modeling</option>
-            <option value="sitcom">Sitcom writing</option>
-            <option value="applications">Desktop Applications</option>
-          </select>
-          <h3>How much of a challenge do you want?</h3>
-          <select id="challenge" name="">
-            <option value="none">No challenge</option>
-            <option value="somewhat">Somewhat of a challenge</option>
-            <option value="yes">I am so up for a challenge</option>
-          </select>
-          <h3>What color do you best identify with?</h3>
-          <select id="color" name="">
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="red">Red</option>
-          </select>
-        </form>
+        <div class="col-md-10">
+          <div class="panel panel-success">
+            <div class="panel-body">
+              <form class="survey" action="index.html" method="post">
+                <div class="panel-heading">
+                <h3>What career interests you?</h3>
+              </div>
+                <select id="career" name="">
+                  <option value="hand">Hand Model</option>
+                  <option value="dev">Back-end Developer</option>
+                  <option value="software">Software Engineer</option>
+                  <option value="import">Import/Export</option>
+                </select>
+                <div class="panel-heading">
+                  <h3>What type of company would you like to work for?</h3>
+                </div>
+                <select id="company" name="">
+                  <option value="google">Google</option>
+                  <option value="pendant">Pendant Publishing</option>
+                  <option value="microsoft">Microsoft</option>
+                  <option value="ig">Instagram</option>
+                </select>
+                <div class="panel-heading">
+                  <h3>What sounds most important to you?</h3>
+                </div>
+                <select id="important" name="">
+                  <option value="ai">Artificial Intelligence</option>
+                  <option value="simulation">Simulations and 3D modeling</option>
+                  <option value="sitcom">Sitcom writing</option>
+                  <option value="applications">Desktop Applications</option>
+                </select>
+                <div class="panel-heading">
+                  <h3>How much of a challenge do you want?</h3>
+                </div>
+                <select id="challenge" name="">
+                  <option value="none">No challenge</option>
+                  <option value="somewhat">Somewhat of a challenge</option>
+                  <option value="yes">I am so up for a challenge</option>
+                </select>
+                <div class="panel-heading">
+                  <h3>What color do you best identify with?</h3>
+                </div>
+                <select id="color" name="">
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                  <option value="red">Red</option>
+                </select>
+          </form>
+        </div>
       </div>
+    </div>
       <div class="row">
         <button type="listbutton" name="button" id="submit-btn">Which language should I learn?</button>
       </div>
+    </div>
 
     <div class="result" id="python">
         <h3>You should learn <strong>Python<strong>!</h3>
