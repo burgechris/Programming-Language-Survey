@@ -13,16 +13,16 @@ $(document).ready(function(){
 
     $(".name").text(name);
 
-    if (career === "dev" && interest === "ai" || interest === "applications") {
+    if (career === "dev") {
         $("#python").show();
       }
-      else if (career === "software" || career === "dev" && interest === "simulation") {
+      else if (career === "software") {
         $("#ruby").show();
       }
-      else if (career === "web" && interest === "applications" || interest === "ai") {
+      else if (career === "web") {
         $("#c").show();
       }
-      else if (career === "hand" || company === "pendant" || interest === "sitcom" || challenge === "none" || animal === "sloth") {
+      else if (career === "hand") {
         $("#george").show();
       }
       else if (animal === "none" || company === "none" || important === "none" || challenge === "none" || animal === "none") {
