@@ -6,18 +6,18 @@ $(document).ready(function(){
     var company = $("select#company").val();
     var important = $("select#important").val();
     var challenge = $("select#challenge").val();
-    var color = $("select#color").val();
+    var animal = $("select#animal").val();
 
-    if (career === "dev" && company === "google" && important === "ai" && challenge === "somewhat" && color === "blue") {
+    if (career === "dev" || company === "google" || important === "ai" || challenge === "small" || animal === "moose") {
       $("#python").show();
     }
-    else if (career === "software" && company === "ig" && important === "simulation" && challenge === "somewhat" && color === "green") {
+    else if (career === "web" || company === "hulu" || important === "simulation" || challenge === "moderate" || animal === "owl") {
       $("#ruby").show();
     }
-    else if (career === "software" && company === "microsoft" || important === "applications" && challenge === "somewhat" && color === "red") {
-      $("#ruby").show();
+    else if (career === "software" || company === "microsoft" || important === "applications" || challenge === "yes" || animal === "shark") {
+      $("#c#").show();
     }
-    else if (career === "hand" || career === "import" || company === "pendant" || important === "sitcom" || challenge === "none" || challenge === "yes" && color === "blue") {
+    else (career === "hand" || company === "pendant" || important === "sitcom" || challenge === "none" || animal === "sloth") {
       $("#george").show();
     }
 
