@@ -1,3 +1,7 @@
 .result {
   display: none;
 }
+
+.jumbotron {
+  font-family: 'Catamaran', sans-serif;
+}
