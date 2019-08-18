@@ -14,7 +14,7 @@ $(document).ready(function(){
     $(".name").text(name);
 
     if (career === "none" || company === "none" || interest === "none" || challenge === "none" || animal === "none") {
-      alert("Oops, it looks like you forgot something!!")
+      alert("Oops, it looks like you forgot something!!");
     }
       else if (career === "dev") {
         $("#python").show();
